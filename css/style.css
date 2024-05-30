@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --main-color : #021C3B;
+    --secondary-color : #E5E5E5;
+    --dark-color : #333;
+    --gold-color : #EABE00;
+}
+
+nav {
+     background-color: var(--main-color) !important;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 10px;
+  }
+
+  .navbar-nav .nav-item .navbar-text,
+  .navbar-nav .nav-item a {
+    color: #fff;
+  }
+
+  nav .navbar-brand {
+    margin-bottom: 0;
+  }
+
+  nav .navbar-brand p {
+    font-size: 16px;
+  }
+
+  nav .nav-link {
+    color: #fff;
+  }
+
+  .navbar-nav .nav-item .fa {
+    margin-left: 5px;
+  }
+
+  .navbar-brand {
+    flex-grow: 1;
+    text-align: center;
+  }
+  .main-nav .nav-item {
+    margin-left: 10px;
+  }
+  .main-nav .nav-item .nav-link {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .main-nav .form-control {
+    width: 200px;
+  }
+
+  .splide__slide {
+    position: relative;
+  }
+  .splide__slide img {
+    width: 100%;
+    height: auto;
+  }
+  .slide-text {
+    position: absolute;
+    bottom: 45%;
+    left: 20%;
+    right: 20%;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 70px 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  /* your CSS goes here*/
+.title {
+  color: var(--gold-color);
+  margin-bottom: 30px;
+  position: relative;
+}
+.title-dark {
+color: var(--main-color);
+}
+
+.title::before {
+  position: absolute;
+  right: -29px;
+  top: 0;
+  height: 20px;
+  width: 20px;
+  transform: rotate(45deg);
+  background-color: var(--main-color);
+  box-shadow: 0px 4px 4px 0px #aaa;
+  border-radius: 4px;
+  content: '';
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.title::after {
+  position: absolute;
+  right: -19px;
+  top: 25px;
+  height: 14px;
+  width: 14px;
+  transform: rotate(45deg);
+  background-color: var(--main-color);
+  box-shadow: 0px 4px 4px 0px #aaa;
+  border-radius: 4px;
+  content: '';
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+ /* services */
+.services {
+    padding:40px;
+  position: relative;
+}
+.services .square {
+  height: 100px;
+  width: 100px;
+  margin: 30px auto 40px;
+  position: relative;
+  border-radius: 15px;
+  transform: rotate(45deg);
+  padding: 10px;
+  background-color:var(--main-color);
+  box-shadow: 0px 0px 27px 0px #ccc;
+  border: 2px dotted #eaf3fa;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.square i {
+  transform: rotate(315deg);
+  display: block;
+  color: #eaf3fa;
+  font-size: 40px;
+  padding-top: 17px;
+  padding-right: 14px;
+  -webkit-transform: rotate(315deg);
+  -moz-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  -o-transform: rotate(315deg);
+}
+.services .square::before {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: var(--gold-color);
+  content: '';
+}
+.services .square::after {
+  position: absolute;
+  left: 50px;
+  top: 66px;
+  width: 1px;
+  height: 88%;
+  background-color:var(--gold-color);
+  content: '';
+  transform: rotate(90deg);
+}
+.services .serv h5 {
+  color: var(--gold-color);
+}
+.services .serv p {
+  color: #777;
+}
+
+.about {
+ background-image: url(../img/about2.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+.about .holder {
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--main-color);
+  font-weight: bold;
+  padding: 70px 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.work img {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arabic Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.11/dist/css/splide.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg p-0" dir="ltr">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center ms-auto">
+            <a href="#" class="nav-link"><i class="fas fa-phone"></i> +123456789</a>
+            <a href="#" class="nav-link"><i class="fas fa-envelope"></i> example@example.com</a>
+          </div>
+          <div class="navbar-brand w-50 text-center text-light p-0">
+            <p>منصة عربية للنهوض بصناعة الاختراعات</p>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li class="nav-item">
+                <span class="navbar-text mx-2">|</span>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"><i class="fas fa-sign-in-alt"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light main-nav">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="Logo" width="120">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav  mb-2 mb-lg-0 mx-0 p-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">عن الموقع</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">الخدمات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">المشاريع</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">المدونة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">اتصل بنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">الدعم</a>
+              </li>
+            </ul>
+            <form class="d-flex me-auto">
+              <input class="form-control me-2" type="search" placeholder="بحث" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">بحث</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Splide Slider -->
+<div id="splide" class="splide" dir="ltr">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <!-- <li class="splide__slide">
+          <img src="img/slider/slide1.png" alt="Slide 1">
+          <div class="overlay"></div>
+          <div class="slide-text">لا يوجد اختراع بلا فائدة، إذ أن مبدأ الابتكار هو إيجاد حل لمشكلة، أو خلق فائدة لتسهيل عمل مجهد، وسيبحث دوماً عن الاختراع الذي صنعته من يحتاجه ويستفيد منه
+        </div>
+        </li>
+        <li class="splide__slide">
+          <img src="img/slider/slide2.png" alt="Slide 2">
+          <div class="overlay"></div>
+          <div class="slide-text">إذا أردت أن تكون مخترعاً شغوفاً فيجب عليك أن تتمسك بالأمل، وأن ألا تستسلم للإخفاقات التي تواجهك، بل أن تتعلم منها وتستند إليها في مسيرتك.
+        </div>
+        </li>
+        <li class="splide__slide">
+          <img src="img/slider/slide3.png" alt="Slide 3">
+          <div class="overlay"></div>
+          <div class="slide-text">من حق بلادك عليك أيها المخترع أن تكون فرداً فاعلاً في النهضة الصناعية، فالأوطان تعتز بمخترعيها والمخترعون العظماء مثلكم يجب أن يعتزوا ببلادهم ويقدرون عطائها الكبير لهم.
+        </div>
+        </li>
+        <li class="splide__slide">
+          <img src="img/slider/slide4.png" alt="Slide 4">
+          <div class="overlay"></div>
+          <div class="slide-text">ستقابل دوماً في حياتك أشخاصا يتعمدون تحطيمك إلى قطع صغيرة بدون قيمة، وأنت تختار أن تسمح للرياح بنثر هذه القطع بعيداً، أو جمعها لتصنع منها صاروخ يحلق بك نحو الفضاء!
+        </div>
+        </li> -->
+        <li class="splide__slide">
+          <img src="img/slider/slide5.jpg" alt="Slide 5">
+          <div class="overlay"></div>
+          <div class="slide-text">من حق بلادك عليك أيها المخترع أن تكون فرداً فاعلاً في النهضة الصناعية، فالأوطان تعتز بمخترعيها والمخترعون العظماء مثلكم يجب أن يعتزوا ببلادهم ويقدرون عطائها الكبير لهم.
+        </div>
+        </li>
+        <li class="splide__slide">
+          <img src="img/slider/slide6.jpg" alt="Slide 6">
+          <div class="overlay"></div>
+          <div class="slide-text">ستقابل دوماً في حياتك أشخاصا يتعمدون تحطيمك إلى قطع صغيرة بدون قيمة، وأنت تختار أن تسمح للرياح بنثر هذه القطع بعيداً، أو جمعها لتصنع منها صاروخ يحلق بك نحو الفضاء!
+        </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="services pd">
+    <div class="container">
+      <h3 class="title">ماذا عنا</h3>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="square"><i class="fa-solid fa-envelope"></i></div>
+          <div class="serv">
+            <h5>الرسالة</h5>
+            <p>أن نكون الشريك المفضل لتحقيق حلم المخترعين في أن تري مشاريعهم النور وتسهم في عجلة الانتاج مستنهضين سواعد الشباب والمؤسسات المختلفة للوصول الي ارقام قياسية في تنفيذ الاختراعات عبر شركاؤنا المحليين والاقليميين</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="serv">
+            <div class="square"><i class="fa-solid fa-eye"></i></div>
+            <h5>الرؤيه</h5>
+            <p>تسريع الوصول إلي 2060 والسعي إلي تكامل أدوارنا مع المخترعين والقطاعين الحكومي والخاص للوصول الي مشاريع حقيقية علي أرض الواقع تخدم الوطن ويستفيد منها المواطن وتحقق النمو الاقتصادي والاستقرار المادي لأصحابها.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="square"><i class="fas fa-globe"></i></div>
+          <div class="serv">
+            <h5>الاهداف</h5>
+            <p>-ربط المخترع بالمصانع والشركات والمؤسسات ذات الصلة باختراعه وتقديم كل الدعم اللازم لتنفيذ اختراعه . 
+              <br>
+              - أن تكون اختراعتنا منافسة في الأسواق المحلية والإقليمية والعالمية. 
+              <br>
+              - المساهمة في تحويل الاختراعات إلى منتج ذو قيمة ليكون أحد موارد الكسب المالي للمخترع والمصنع.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about p-5 my-5">
+    <div class="container">
+      <h3 class="title ">من نحن</h3>
+      <div class="holder my-5">
+        <p>جسر تواصل بين المخترعين العرب والمصانع والمؤسسات لتقديم حزمة من الخدمات التي تسهم في أن تري هذه الأفكار والاختراعات النور وتكون حقيقة علي أرض الواقع عبر فريق عمل مؤهل ومتخصص يهدف إلى الوصول إلي مجتمع مخترع ومنتج  وفعال.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="work p-5 my-5">
+    <div class="container">
+      <h3 class="title">كيف تعمل المنصة</h3>
+      <img class="pt-5" src="img/services.jpg" alt="services">
+    </div>
+  </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.11/dist/js/splide.min.js"></script>
+      <script src="js/main.js"></script>
+    </body>
+    </html>
+          
